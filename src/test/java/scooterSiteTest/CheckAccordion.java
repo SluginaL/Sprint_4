@@ -1,4 +1,4 @@
-package orderstatus;
+package scooterSiteTest;
 
 import main.BrowserRule;
 import org.junit.Assert;

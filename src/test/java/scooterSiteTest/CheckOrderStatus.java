@@ -1,4 +1,4 @@
-package orderstatus;
+package scooterSiteTest;
 
 import org.junit.*;
 import main.BrowserRule;
