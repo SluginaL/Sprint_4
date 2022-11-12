@@ -6,9 +6,7 @@ import main.BrowserRule;
         import org.junit.Test;
         import org.junit.runner.RunWith;
         import org.junit.runners.Parameterized;
-        import org.openqa.selenium.WebDriver;
-        import org.openqa.selenium.chrome.ChromeDriver;
-        import pom.MainPage;
+import pom.MainPage;
         import pom.OrderPage;
 
 
@@ -43,14 +41,18 @@ public class CreateOrderPositiveTest {
     private final int periodElement;
     private final String comment;
 
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "Тестовые данные: {0},{1}, {2}, {3}, {4}, {5}, {6},{7}. {8}, {9}")
     public static Object[][] data() {
         return new Object[][] {
-                {MainPage.orderButton1, "Питер", "Паркер", "20 Инграм Стрит в Форест Хиллз",
+                {MainPage.orderButtonUp, "Питер", "Паркер", "20 Инграм Стрит в Форест Хиллз",
                         "преображ", 1, "89889889898", 17, 3, "Замечательный самокат!!!"},
-                {MainPage.orderButton2, "Гарри", "Поттер", "20 Пушкина дом Колотушкина",
+                {MainPage.orderButtonDown, "Гарри", "Поттер", "20 Пушкина дом Колотушкина",
                         "черкиз", 0, "89889889897", 20, 1, "Томное катание по центру нью йорка!!!"},
         };
+    }
+    @Test
+    public void showInfo() {
+        System.out.println(data().toString());
     }
 
     @Test

@@ -7,62 +7,59 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import java.util.ArrayList;
-import java.util.List;
-
 @RunWith(Parameterized.class)
 public class MainPage {
 
-    private final String url = "https://qa-scooter.praktikum-services.ru/";
+    private static final String url = "https://qa-scooter.praktikum-services.ru/";
 
     // Кнопка "Заказать" в хэдэре
     public final static By orderButtonHeader = By.xpath(".//div[contains(@class,'Header_Nav__AGCXC')]" +
             "/button[contains(text(),'Заказать')]");
 
     // FAQ questions
-    public final static By questionsFAQ1 = By.id("accordion__heading-0");
-    public final static By questionsFAQ2 = By.id("accordion__heading-1");
-    public final static By questionsFAQ3 = By.id("accordion__heading-2");
-    public final static By questionsFAQ4 = By.id("accordion__heading-3");
-    public final static By questionsFAQ5 = By.id("accordion__heading-4");
-    public final static By questionsFAQ6 = By.id("accordion__heading-5");
-    public final static By questionsFAQ7 = By.id("accordion__heading-6");
-    public final static By questionsFAQ8 = By.id("accordion__heading-7");
+    public final static By questionsFAQWhatPrice = By.id("accordion__heading-0");
+    public final static By questionsFAQWantSomeScooter = By.id("accordion__heading-1");
+    public final static By questionsFAQCalculateRentTime = By.id("accordion__heading-2");
+    public final static By questionsFAQRentToday = By.id("accordion__heading-3");
+    public final static By questionsFAQProlongation = By.id("accordion__heading-4");
+    public final static By questionsFAQEnergy = By.id("accordion__heading-5");
+    public final static By questionsFAQOrderCancellation = By.id("accordion__heading-6");
+    public final static By questionsFAQDeliveryToMCAD = By.id("accordion__heading-7");
 
     //FAQ answers
-    public final static By answerFAQ1 = By.xpath(".//div[contains(@class,'accordion__panel')]/" +
+    public final static By answerFAQPrice = By.xpath(".//div[contains(@class,'accordion__panel')]/" +
             "p[contains(text(),'Сутки')]");
-    public final static By answerFAQ2 = By.xpath(".//div[contains(@class,'accordion__panel')]/" +
+    public final static By answerFAQSomeScooter = By.xpath(".//div[contains(@class,'accordion__panel')]/" +
             "p[contains(text(),'Пока что у нас')]");
-    public final static By answerFAQ3 = By.xpath(".//div[contains(@class,'accordion__panel')]/" +
+    public final static By answerFAQRentTime = By.xpath(".//div[contains(@class,'accordion__panel')]/" +
             "p[contains(text(),'Допустим')]");
-    public final static By answerFAQ4 = By.xpath(".//div[contains(@class,'accordion__panel')]/" +
+    public final static By answerFAQRentToday = By.xpath(".//div[contains(@class,'accordion__panel')]/" +
             "p[contains(text(),'Только начиная ')]");
-    public final static By answerFAQ5 = By.xpath(".//div[contains(@class,'accordion__panel')]/" +
+    public final static By answerFAQProlongation = By.xpath(".//div[contains(@class,'accordion__panel')]/" +
             "p[contains(text(),'Пока что нет')]");
-    public final static By answerFAQ6 = By.xpath(".//div[contains(@class,'accordion__panel')]/" +
+    public final static By answerFAQEnergy = By.xpath(".//div[contains(@class,'accordion__panel')]/" +
             "p[contains(text(),'Самокат приезжает')]");
-    public final static By answerFAQ7 = By.xpath(".//div[contains(@class,'accordion__panel')]/" +
+    public final static By answerFAQOrderCancellation = By.xpath(".//div[contains(@class,'accordion__panel')]/" +
             "p[contains(text(),'Да, пока самокат')]");
-    public final static By answerFAQ8 = By.xpath(".//div[contains(@class,'accordion__panel')]/" +
+    public final static By answerFAQDeliveryToMCAD = By.xpath(".//div[contains(@class,'accordion__panel')]/" +
             "p[contains(text(),'Да, обязательно. ')]");
 
     //FAQ answers  text
-    public final static String  realTextAnswerFAQ1 = "Сутки — 400 рублей. Оплата курьеру — наличными или картой.";
-    public final static String realTextAnswerFAQ2 = "Пока что у нас так: один заказ — один самокат. " +
+    public final static String realTextAnswerFAQPrice = "Сутки — 400 рублей. Оплата курьеру — наличными или картой.";
+    public final static String realTextAnswerFAQSomeScooter = "Пока что у нас так: один заказ — один самокат. " +
             "Если хотите покататься с друзьями, можете просто сделать несколько заказов — один за другим.";
-    public final static String realTextAnswerFAQ3 = "Допустим, вы оформляете заказ на 8 мая. " +
+    public final static String realTextAnswerFAQRentTime = "Допустим, вы оформляете заказ на 8 мая. " +
             "Мы привозим самокат 8 мая в течение дня." +
             " Отсчёт времени аренды начинается с момента, когда вы оплатите заказ курьеру." +
             " Если мы привезли самокат 8 мая в 20:30, суточная аренда закончится 9 мая в 20:30.";
-    public final static String realTextAnswerFAQ4 = "Только начиная с завтрашнего дня. Но скоро станем расторопнее.";
-    public final static String realTextAnswerFAQ5 = "Пока что нет!" +
+    public final static String realTextAnswerFAQRentToday = "Только начиная с завтрашнего дня. Но скоро станем расторопнее.";
+    public final static String realTextAnswerFAQProlongation = "Пока что нет!" +
             " Но если что-то срочное — всегда можно позвонить в поддержку по красивому номеру 1010.";
-    public final static String realTextAnswerFAQ6 = "Самокат приезжает к вам с полной зарядкой." +
+    public final static String realTextAnswerFAQEnergy = "Самокат приезжает к вам с полной зарядкой." +
             " Этого хватает на восемь суток — даже если будете кататься без передышек и во сне. Зарядка не понадобится.";
-    public final static String realTextAnswerFAQ7 = "Да, пока самокат не привезли. Штрафа не будет," +
+    public final static String realTextAnswerFAQOrderCancellation = "Да, пока самокат не привезли. Штрафа не будет," +
             " объяснительной записки тоже не попросим. Все же свои.";
-    public final static String realTextAnswerFAQ8 = "Да, обязательно. Всем самокатов! И Москве, и Московской области.";
+    public final static String realTextAnswerFAQDeliveryToMCAD = "Да, обязательно. Всем самокатов! И Москве, и Московской области.";
 
     private final static By orderStatusButton = By.xpath(".//button[@class='Header_Link__1TAG7']");
     private final static By inputOrder = By.xpath(".//div[contains(@class,'Input_InputContainer__3NykH')]/" +
@@ -73,8 +70,8 @@ public class MainPage {
     String orderStatus = ".Header_Link__1TAG7";
 
     // Кнопка заказать
-    public static String orderButton1 = ".Header_Nav__AGCXC :first-child";
-    public static String orderButton2 = ".Button_Button__ra12g.Button_Middle__1CSJM";
+    public static String orderButtonUp = ".Header_Nav__AGCXC :first-child";
+    public static String orderButtonDown = ".Button_Button__ra12g.Button_Middle__1CSJM";
 
     // Клик по кнопке Заказать
     public void makeOrder(String orderButton) {

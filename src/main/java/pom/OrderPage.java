@@ -26,22 +26,22 @@ public class OrderPage {
             "and (text()=\"Да\")]");
 
     //поле Имя
-    private By firsName = By.xpath("//input[@placeholder=\"* Имя\"]");
+    private By firsNameInput = By.xpath("//input[@placeholder=\"* Имя\"]");
 
     //поле Фамилия
-    private By lastName = By.xpath("//input[@placeholder=\"* Фамилия\"]");
+    private By lastNameInput = By.xpath("//input[@placeholder=\"* Фамилия\"]");
 
     //поле Адрес
-    private By address = By.xpath("//input[@placeholder=\"* Адрес: куда привезти заказ\"]");
+    private By addressInput = By.xpath("//input[@placeholder=\"* Адрес: куда привезти заказ\"]");
 
     //поле Станция метро
-    private By metro = By.xpath("//input[@placeholder=\"* Станция метро\"]");
+    private By metroInput = By.xpath("//input[@placeholder=\"* Станция метро\"]");
 
     //подсказки станций метро
     private By metroSuggestions = By.xpath("//div[@class=\"select-search__select\"]/ul/li");
 
     //поле Телефон
-    private By phoneNumber = By.xpath("//input[@placeholder=\"* Телефон: на него позвонит курьер\"]");
+    private By phoneNumberInput = By.xpath("//input[@placeholder=\"* Телефон: на него позвонит курьер\"]");
 
     //календарь
     private By deliveryDates = By.xpath("//input[@placeholder=\"* Когда привезти самокат\"]");
@@ -56,7 +56,7 @@ public class OrderPage {
     private By periodVariants = By.xpath("//div[@class=\"Dropdown-menu\"]/div");
 
     //черный цвет
-    private By color = By.xpath("//input[@id=\"black\"]");
+    private By colorCheckBox = By.xpath("//input[@id=\"black\"]");
 
     //поле комментарий для курьера
     private By commentForCourier = By.xpath("//input[@placeholder=\"Комментарий для курьера\"]");
@@ -74,19 +74,19 @@ public class OrderPage {
     }
 
     public void enterFirstName(String fName) {
-        driver.findElement(firsName).sendKeys(fName);
+        driver.findElement(firsNameInput).sendKeys(fName);
     }
 
     public void enterLastName(String lName) {
-        driver.findElement(lastName).sendKeys(lName);
+        driver.findElement(lastNameInput).sendKeys(lName);
     }
 
     public void enterAddress(String adress) {
-        driver.findElement(address).sendKeys(adress);
+        driver.findElement(addressInput).sendKeys(adress);
     }
 
     public void enterMetroStation(String station) {
-        driver.findElement(metro).sendKeys(station);
+        driver.findElement(metroInput).sendKeys(station);
     }
 
     public void selectMetroStation(int element) {
@@ -94,7 +94,7 @@ public class OrderPage {
     }
 
     public void enterPhoneNumber(String number) {
-        driver.findElement(phoneNumber).sendKeys(number);
+        driver.findElement(phoneNumberInput).sendKeys(number);
     }
 
     public void deliveryDatesClick() {
@@ -114,7 +114,7 @@ public class OrderPage {
     }
 
     public void selectColor() {
-        driver.findElement(color).click();
+        driver.findElement(colorCheckBox).click();
     }
 
     public void comments(String comment) {

@@ -24,7 +24,10 @@ public class CheckAccordion {
 
     @Rule
     public BrowserRule browserRule = new BrowserRule();
-
+    @Test
+    public void showInfo() {
+        System.out.println(getDescription().toString());
+    }
     @Test
     public void checkAnswerDayForHundred() {
         MainPage mainPage = new MainPage(browserRule.getDriver());
@@ -35,17 +38,17 @@ public class CheckAccordion {
         Assert.assertEquals("Текст: " + actualText + " Не соответствует ожидаемому: " + mainRealTextAnswerFAQ,
                 mainRealTextAnswerFAQ, actualText);
     }
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "Тестовые данные: {0},{1}, {2}")
     public static Object[][] getDescription() {
         return new Object[][]{
-                {MainPage.questionsFAQ1, MainPage.answerFAQ1, MainPage.realTextAnswerFAQ1},
-                {MainPage.questionsFAQ2, MainPage.answerFAQ2, MainPage.realTextAnswerFAQ2},
-                {MainPage.questionsFAQ3, MainPage.answerFAQ3, MainPage.realTextAnswerFAQ3},
-                {MainPage.questionsFAQ4, MainPage.answerFAQ4, MainPage.realTextAnswerFAQ4},
-                {MainPage.questionsFAQ5, MainPage.answerFAQ5, MainPage.realTextAnswerFAQ5},
-                {MainPage.questionsFAQ6, MainPage.answerFAQ6, MainPage.realTextAnswerFAQ6},
-                {MainPage.questionsFAQ7, MainPage.answerFAQ7, MainPage.realTextAnswerFAQ7},
-                {MainPage.questionsFAQ8, MainPage.answerFAQ8, MainPage.realTextAnswerFAQ8},
+                {MainPage.questionsFAQWhatPrice, MainPage.answerFAQPrice, MainPage.realTextAnswerFAQPrice},
+                {MainPage.questionsFAQWantSomeScooter, MainPage.answerFAQSomeScooter, MainPage.realTextAnswerFAQSomeScooter},
+                {MainPage.questionsFAQCalculateRentTime, MainPage.answerFAQRentTime, MainPage.realTextAnswerFAQRentTime},
+                {MainPage.questionsFAQRentToday, MainPage.answerFAQRentToday, MainPage.realTextAnswerFAQRentToday},
+                {MainPage.questionsFAQProlongation, MainPage.answerFAQProlongation, MainPage.realTextAnswerFAQProlongation},
+                {MainPage.questionsFAQEnergy, MainPage.answerFAQEnergy, MainPage.realTextAnswerFAQEnergy},
+                {MainPage.questionsFAQOrderCancellation, MainPage.answerFAQOrderCancellation, MainPage.realTextAnswerFAQOrderCancellation},
+                {MainPage.questionsFAQDeliveryToMCAD, MainPage.answerFAQDeliveryToMCAD, MainPage.realTextAnswerFAQDeliveryToMCAD},
         };
 
 

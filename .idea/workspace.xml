@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8c8cc43-21b8-41d6-bda5-e08b0742ba88" name="Changes" comment="webinar">
-      <change beforePath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/BrowserRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/BrowserRule.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pom/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pom/MainPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pom/OrderPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pom/OrderPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/scooterSiteTest/CheckAccordion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/scooterSiteTest/CheckAccordion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/scooterSiteTest/CheckOrderStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/scooterSiteTest/CheckOrderStatus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/scooterSiteTest/CreateOrderPositiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/scooterSiteTest/CreateOrderPositiveTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,16 +68,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/Users/alinaslugina/Downloads/webinar",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/alinaslugina/Downloads/webinar&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="JUnit.CreateOrderPositiveTest.makeOrder">
+}</component>
+  <component name="RunManager" selected="JUnit.CheckAccordion">
     <configuration name="CheckAccordion" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="webinar" />
       <extension name="coverage">
@@ -160,11 +156,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CheckAccordion" />
         <item itemvalue="JUnit.CreateOrderPositiveTest.makeOrder" />
         <item itemvalue="JUnit.CheckOrderStatus.notFoundShowWhenNoExsistingOrdersStatus" />
-        <item itemvalue="JUnit.CheckAccordion" />
         <item itemvalue="JUnit.CheckAccordion.checkAnswerDayForHundred" />
         <item itemvalue="JUnit.CheckOrderStatus" />
       </list>
@@ -209,18 +216,28 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/scooterSiteTest/CheckAccordion.java</url>
-          <line>32</line>
+          <line>35</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/scooterSiteTest/CheckAccordion.java</url>
-          <line>33</line>
+          <line>36</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/scooterSiteTest/CheckAccordion.java</url>
-          <line>34</line>
+          <line>37</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pom/OrderPage.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/scooterSiteTest/CreateOrderPositiveTest.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
