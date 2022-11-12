@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8c8cc43-21b8-41d6-bda5-e08b0742ba88" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/BrowserRule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pom/MainPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pom/NotFoundPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/orderstatus/CheckOrderStatus.java" afterDir="false" />
-    </list>
+    <list default="true" id="e8c8cc43-21b8-41d6-bda5-e08b0742ba88" name="Changes" comment="webinarFixed" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,12 +13,25 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/main/BrowserRule.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/pom/MainPage.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/pom/NotFoundPage.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/scooterSiteTest/CheckOrderStatus.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -61,35 +62,112 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/Users/alinaslugina/webinar",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/alinaslugina/Downloads/webinar&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
-}]]></component>
-  <component name="RunManager">
-    <configuration name="CheckOrderStatus.notFoundShowWhenNoExsistingOrdersStatus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+}</component>
+  <component name="RunManager" selected="JUnit.CheckAccordion">
+    <configuration name="CheckAccordion" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="webinar" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="orderstatus.*" />
+          <option name="PATTERN" value="scooterSiteTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="orderstatus" />
-      <option name="MAIN_CLASS_NAME" value="orderstatus.CheckOrderStatus" />
+      <option name="MAIN_CLASS_NAME" value="scooterSiteTest.CheckAccordion" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CheckAccordion.checkAnswerDayForHundred" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="webinar" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="scooterSiteTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="orderstatus" />
+      <option name="MAIN_CLASS_NAME" value="scooterSiteTest.CheckAccordion" />
+      <option name="METHOD_NAME" value="checkAnswerDayForHundred" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CheckOrderStatus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="webinar" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="scooterSiteTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="orderstatus" />
+      <option name="MAIN_CLASS_NAME" value="scooterSiteTest.CheckOrderStatus" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CheckOrderStatus.notFoundShowWhenNoExsistingOrdersStatus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="webinar" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="scooterSiteTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="orderstatus" />
+      <option name="MAIN_CLASS_NAME" value="scooterSiteTest.CheckOrderStatus" />
       <option name="METHOD_NAME" value="notFoundShowWhenNoExsistingOrdersStatus" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CreateOrderPositiveTest.makeOrder" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="webinar" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="scooterSiteTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="scooterSiteTest" />
+      <option name="MAIN_CLASS_NAME" value="scooterSiteTest.CreateOrderPositiveTest" />
+      <option name="METHOD_NAME" value="makeOrder" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CheckAccordion" />
+        <item itemvalue="JUnit.CreateOrderPositiveTest.makeOrder" />
         <item itemvalue="JUnit.CheckOrderStatus.notFoundShowWhenNoExsistingOrdersStatus" />
+        <item itemvalue="JUnit.CheckAccordion.checkAnswerDayForHundred" />
+        <item itemvalue="JUnit.CheckOrderStatus" />
       </list>
     </recent_temporary>
   </component>
@@ -102,6 +180,21 @@
       <option name="presentableId" value="Default" />
       <updated>1667641085793</updated>
     </task>
+    <task id="LOCAL-00001" summary="webinar">
+      <created>1667900536861</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1667900536862</updated>
+    </task>
+    <task id="LOCAL-00002" summary="webinarFixed">
+      <created>1668231596283</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1668231596283</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -115,43 +208,38 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="webinar" />
+    <MESSAGE value="webinarFixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="webinarFixed" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/orderstatus/CheckOrderStatus.java</url>
-          <line>19</line>
+          <url>file://$PROJECT_DIR$/src/test/java/scooterSiteTest/CheckAccordion.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/scooterSiteTest/CheckAccordion.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/scooterSiteTest/CheckAccordion.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pom/OrderPage.java</url>
+          <line>64</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/orderstatus/CheckOrderStatus.java</url>
-          <line>18</line>
+          <url>file://$PROJECT_DIR$/src/test/java/scooterSiteTest/CreateOrderPositiveTest.java</url>
+          <line>13</line>
           <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/orderstatus/CheckOrderStatus.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/orderstatus/CheckOrderStatus.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/orderstatus/CheckOrderStatus.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/orderstatus/CheckOrderStatus.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/orderstatus/CheckOrderStatus.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
